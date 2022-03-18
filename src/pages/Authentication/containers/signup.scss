@@ -1,0 +1,153 @@
+.signup-page {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .row {
+        margin: 0px;
+    }
+    .image-background {
+        background-color: #000;
+        background-image: url('../../../asset/images/cover.png');
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        .welcome-img {
+            top: 40%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .signup-side {
+        height: 100vh;
+        overflow-y: auto;
+        .signup-success-form {
+            margin: 20px 0px;
+            width: 60%;
+            max-width: 370px;
+            top: 46%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            .success-icon {
+                display: flex;
+                justify-content: center;
+                font-size: 50px;
+                svg {
+                    color: #1D4994;
+                }
+                margin-bottom: 20px;
+            }
+            .signup-btn {
+                background-color: #1D4994;
+                border-color: #1D4994;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        }
+        .signup-form {
+            margin: 20px 0px;
+            width: 60%;
+            max-width: 370px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            .require-style .ant-form-item-label > label::before {
+                display: inline-block;
+                margin-right: 4px;
+                color: #ff4d4f;
+                font-size: 14px;
+                font-family: SimSun, sans-serif;
+                line-height: 1;
+                content: '*';
+            }
+            h3 {
+                font-size: 20px;
+                color: #1D4994;
+                font-weight: 500;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .signup-btn {
+                background-color: #1D4994;
+                border-color: #1D4994;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .login-btn {
+                border-color: #1D4994;
+                color: #1D4994;
+                margin-bottom: 20px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    .anticon {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    // .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    //     content: '' !important;
+    // }
+    .ant-form-item-label > label {
+        color: #333;
+    }
+    .ant-form-item {
+        margin-bottom: 7px;
+    }
+    .ant-checkbox-wrapper {
+        margin-bottom: 15px;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner, .ant-radio-inner::after {
+        background-color: #1D4994;
+        border-color: #1D4994;
+    }
+    .ant-checkbox:hover .ant-checkbox-inner {
+        border-color: #1D4994;
+    }
+    .ant-radio-checked .ant-radio-inner {
+        border-color: #1D4994;
+    }
+    .ant-radio-checked::after {
+        border: 1px solid #1D4994
+    }
+    .ant-form-horizontal .ant-form-item-label {
+        padding-bottom: 3px !important;
+    }
+    .ant-picker {
+        width: 100%;
+    }
+}
+    .term-n-condition {
+        height: 80%;
+        h3 {
+            text-transform: uppercase;
+        }
+        p {
+            text-align: justify;
+        }
+        .ant-modal-content {
+            height: 100%;
+        }
+        .ant-modal-body {
+            height: calc(100% - 54px);
+            overflow-y: auto;
+        }
+        .ant-modal-footer {
+            display: none;
+        }
+    }

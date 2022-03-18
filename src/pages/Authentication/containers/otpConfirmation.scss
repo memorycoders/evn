@@ -1,0 +1,86 @@
+.otp-page {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .row {
+        margin: 0px;
+    }
+    .image-background {
+        background-color: #000;
+        background-image: url('../../../asset/images/cover.png');
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        .welcome-img {
+            top: 40%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .otp-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            width: 60%;
+            max-width: 400px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            h3 {
+                font-size: 20px;
+                color: #1D4994;
+                font-weight: 500;
+                text-align: center;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+        }
+        .opt-input {
+            justify-content: center;
+            input {
+                width: 50px !important;
+                height: 40px;
+                border: 1px solid #DFDFDF;
+                box-sizing: border-box;
+            }
+            span {
+                margin: 0px 10px;
+            }
+        }
+        .otp-btn {
+                float: right;
+                background-color: #1D4994;
+                border-color: #1D4994;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-top: 15px;
+        }
+        .ant-btn-primary:hover, .ant-btn-primary:focus {
+            background-color: #1D4994;
+            border-color: #1D4994;
+        }
+        .reset-btn .reset-btn:focus, .reset-btn:hover{
+            background-color: #1D4994;
+            border-color: #1D4994;
+        }
+        .back-btn {
+            border-color: #1D4994;
+            color: #1D4994;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            a {
+                display: flex;
+                align-items: center;
+                .anticon {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+.ant-form-item-explain {
+    text-align: left;
+}

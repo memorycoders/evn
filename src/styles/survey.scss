@@ -1,0 +1,17 @@
+.env-survey-content {
+    padding: 10px;
+}
+.sv_button {
+    border-radius: 5px;
+    background: #F6BB3B;
+    border-color: #F6BB3B;
+}
+
+.info-customer {
+    .ant-form-item-control-input {
+    .ant-input, .ant-picker-input {
+        border-radius: 0%;
+        border-bottom: 1px dotted;
+    }
+    }
+}

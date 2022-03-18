@@ -1,0 +1,24 @@
+$green: #1D4994;
+$red: #DC4C4C;
+$blue: #4E9DF9;
+$gray: #666666;
+$black: #333333;
+.ant-btn-primary {
+    background: $green;
+    border-color: $green;
+    &:hover {
+        background: $green;
+    }
+}
+.ant-menu-submenu-arrow {
+    display: none;
+}
+.show-circle {
+    display: inline
+}
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}

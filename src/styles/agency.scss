@@ -1,0 +1,13 @@
+.agency-content {
+    padding: 10px 20px;
+    .ant-form-item-control-input {
+        .ant-input, .ant-picker-input, .ant-select-selector{
+            border-radius: 0%;
+            border-bottom: 1px dotted black !important;
+        }
+    }
+    .content-center {
+        text-align: center;
+        
+    }
+}

@@ -1,0 +1,28 @@
+.approve-status {
+    
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #1D4994;
+        padding-top: 20px;
+    }
+    .loanlist {
+        background: #fff;
+        margin-top: 20px;
+        height: calc(100vh - 290px);
+        .ant-table-thead th{
+            text-align: center;
+        }
+        .ant-table-tbody td {
+            text-align: center;
+        }
+    }
+    .status-btn {
+        cursor: default; 
+        border-radius: 50px;
+        color: #fff;
+        padding: 0px 15px;
+        border: none;
+    }
+   
+}

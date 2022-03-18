@@ -1,0 +1,259 @@
+.loan-list {
+    height: calc(100vh - 100px);
+    padding: 20px;
+    .title {
+        font-size: 20px;
+        color: #1D4994;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    .status-btn {
+        border-radius: 50px;
+        color: #fff;
+        padding: 0px 15px;
+        border: none;
+    }
+    .ant-table-thead > tr > th {
+        text-align: center;
+    }
+    .action-btn {
+        padding: 4px 12px;
+    }
+    .action-btn:first-child {
+        margin-right: 10px;
+    }
+    .action-btn:hover, .action-btn:focus {
+        color: #1D4994;
+        border-color: #1D4994;
+    }
+    .ant-pagination {
+        // opacity: 0;
+    }
+    .ant-pagination-options-size-changer.ant-select {
+        display: none;
+    }
+    .del-btn {
+        background: none;
+        border: none;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .ant-table-tbody tr {
+        cursor: pointer;
+    }
+}
+
+.loan-detail {
+    height: calc(100vh - 100px);
+    padding: 20px;
+    .breadcrumb {
+        max-width: 1024px;
+        margin: auto;
+        font-weight: 600;
+        margin-bottom: 20px;
+        svg {
+            margin: 0px 20px;
+            color: #979797;
+        }
+        >span{
+            cursor: pointer;
+            color: #979797;
+        }
+        >span:hover{
+            color: #1D4994;
+            
+        }
+    }
+    .chat-box {
+        position: relative;
+        max-width: 1024px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 20px;
+        button {
+            background-color: #F6BB3B;
+            color: #fff;
+            border-radius: 5px;
+            img{
+                width: 20px;
+                margin-right: 5px;
+            }
+        }
+        button:hover, button:active {
+            border-color: transparent;
+        }
+        .pop-chat {
+            height: 460px;
+            width: 310px;
+            position: absolute;
+            background: #fff;
+            z-index: 99;
+            top: 70px;
+            right: -20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .chat-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                border-bottom: 1px solid #DFDFDF;
+                .chat-name {
+                    color: #1D4994;
+                    font-weight: 600;
+                }
+                .chat-close { 
+                    cursor: pointer;
+                }
+            }
+            .chat-content {
+                height: 100%;
+                overflow: auto;
+            }
+            .chat-footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 1px solid #DFDFDF;
+                padding: 20px;
+                .chat-input {
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #DFDFDF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: calc(100% - 35px);
+                    input{
+                        width: calc(100% - 35px);
+                        border: none;
+                    }
+                    input:focus {
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+                svg{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .detail-content {
+        // max-width: 1024px;
+        margin: auto;
+        height: calc(100% - 90px);
+        overflow-y: auto;
+        .ant-tabs-tab-btn:focus, .ant-tabs-tab-remove:focus, .ant-tabs-tab-btn:active, .ant-tabs-tab-remove:active {
+            color: #1D4994;
+        }
+        .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab {
+            border-radius: 10px 10px 0px 0px;
+            width: 225px;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            margin-right: 5px;
+            background-color: #D8D8D8;
+            color: #979797;
+        }
+        .ant-tabs-top > .ant-tabs-nav {
+            margin-bottom: 0px;
+        }
+        .ant-tabs-top {
+            .ant-tabs-content-holder {
+                background-color: #fff;
+                margin-bottom: 40px;
+                .ant-tabs-tab {
+                    overflow: auto;
+                }
+                .ant-tabs-content {
+                    padding: 20px;
+                    .img-loan-info {
+                        max-height: 280px;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                    .loan_number {
+                        color: #4DB769;
+                        font-weight: 600;
+                    }
+                    h2 {
+                        border-bottom: 1px solid #D8D8D8;
+                        margin-bottom: 20px;
+                    }
+                    h2:last-child{
+                        border-bottom: none;
+                        span {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .attach-title {
+            height: 50px;
+            background: #1D4994;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .attach-table {
+            margin-bottom: 40px;
+            .ant-pagination {
+                // display: none;
+            }
+            .ant-table-thead > tr > th {
+                background-color: #fff;
+                color: #1D4994;
+            }
+            .attach-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    font-size: 20px;
+                    transform: rotate(0deg);
+                }
+                .attach-more {
+                    margin-left: 30px;
+                }
+                .red {
+                    color: #B42E2E;
+                }
+                .green {
+                    color: #4DB769;
+                }
+            }
+            .ant-table{
+                max-height: 300px;
+                overflow: auto;
+                table{
+                    padding: 0px 30px;
+                }
+            }
+        }
+        .template-table {
+            .ant-table-container table > thead > tr th:last-child, .ant-table-container table > tbody > tr td:last-child {
+                text-align: center;
+            }
+        }
+    }
+    
+}
+.custom-loandetail{
+    height: 100% !important;
+}
+.attach-icon {
+    height: 30px;
+}
